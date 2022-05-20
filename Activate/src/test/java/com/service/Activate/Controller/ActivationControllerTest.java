@@ -75,5 +75,12 @@ class ActivationControllerTest {
 		assertEquals(activationData, activationData);
 	}
 	
+	@Test
+	void testUpdateData() throws CustomException {
+		MobileAccessSaveRequest activationData = new MobileAccessSaveRequest();
+		activationController.updateData(activationData);
+		assertEquals(activationData, activationData);
+	}
+	
 	
 }
